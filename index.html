@@ -1,0 +1,32 @@
+---
+layout: default
+image: /assets/banner.png
+---
+
+<div id="home" class="bg-light">
+<div class="container pt-5">
+{% capture title %}{% include_relative title.html %}{% endcapture %}
+{{ title | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-white">
+<div id="getstarted" class="container py-4">
+{% capture getstarted %}{% include_relative getstarted.html %}{% endcapture %}
+{{ getstarted | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-light">
+<div id="links" class="container py-4">
+{% capture examples %}{% include_relative links.html %}{% endcapture %}
+{{ examples | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
+
+<div class="bg-white">
+<div id="about" class="container py-4">
+{% capture about %}{% include_relative about.html %}{% endcapture %}
+{{ about | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+</div>
+</div>
