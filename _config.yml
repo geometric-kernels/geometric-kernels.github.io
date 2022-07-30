@@ -1,0 +1,35 @@
+title: Geometric Kernels
+description: a framework for kernels and Gaussian processes on spaces with geometric structure
+markdown: kramdown
+plugins:
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+header_menu:
+    -
+        title: "Home"
+        link: "/#home"
+    -
+        title: "Get Started"
+        link: "/#getstarted"
+    -
+        title: "Examples"
+        link: "/#examples"
+    -
+        title: "Documentation"
+        link: "/#documentation"
+    -
+        title: "About"
+        link: "/#about"
+defaults:
+    - scope:
+        path: "_posts/current"
+      values:
+        layout: post
+        category: current
+    - scope:
+        path: "_posts/archive"
+      values:
+        layout: post
+        category: archive
+        
