@@ -1,5 +1,5 @@
 title: Geometric Kernels
-description: a framework for kernels and Gaussian processes on manifolds, graphs, and meshes
+description: A framework for kernels and Gaussian processes on manifolds, graphs, and meshes
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
@@ -13,14 +13,14 @@ header_menu:
         title: "Get Started"
         link: "/#getstarted"
     -
-        title: "Examples"
-        link: "/#examples"
+        title: "Code"
+        link: "/#code"
     -
         title: "Documentation"
         link: "/#documentation"
     -
-        title: "About"
-        link: "/#about"
+        title: "Examples"
+        link: "/#examples"
 defaults:
     - scope:
         path: "_posts/current"
