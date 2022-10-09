@@ -1,5 +1,5 @@
 title: Geometric Kernels
-description: a framework for kernels and Gaussian processes on spaces with geometric structure
+description: a framework for kernels and Gaussian processes on manifolds, graphs, and meshes
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
