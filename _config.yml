@@ -1,5 +1,5 @@
 title: Geometric Kernels
-description: A framework for kernels and Gaussian processes on manifolds, graphs, and meshes
+description: A cross-framework package for kernels and Gaussian processes on manifolds, graphs, and meshes
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
