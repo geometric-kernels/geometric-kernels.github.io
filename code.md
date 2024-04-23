@@ -1,5 +1,5 @@
 ---
 title: Code
 redirect_to:
-  - https://github.com/GPflow/GeometricKernels
+  - https://github.com/geometric-kernels/GeometricKernels
 ---
