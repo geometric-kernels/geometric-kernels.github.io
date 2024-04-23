@@ -1,5 +1,5 @@
 ---
 title: Examples
 redirect_to:
-  - https://github.com/GPflow/GeometricKernels/tree/main/notebooks
+  - https://github.com/geometric-kernels/GeometricKernels/tree/main/notebooks
 ---
