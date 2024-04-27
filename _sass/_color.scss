@@ -1,0 +1,36 @@
+:root {
+    color-scheme: light dark;
+    --color-text: #{$color-text};
+    --color-primary: #{$color-primary};
+    --color-light: #{$color-light};
+    --color-white: #{$color-white};
+    --color-black: #{$color-black};
+    --color-btn: #{$color-btn};
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        @if $color-text-dark { --color-text: #{$color-text-dark}; }
+        @if $color-primary-dark { --color-primary: #{$color-primary-dark}; }
+        @if $color-light-dark { --color-light: #{$color-light-dark}; }
+        @if $color-white-dark { --color-white: #{$color-white-dark}; }
+        @if $color-black-dark { --color-black: #{$color-black-dark}; }
+        @if $color-btn-dark { --color-btn: #{$color-btn-dark}; }
+    }
+    .n\:container {
+        --color-primary: #c3beb6 !important;
+    }
+    .dark-invert, .n\:icon {
+        filter: invert(90%) hue-rotate(180deg) sepia(10%);
+    }
+    img:not(.dark-invert) {
+        filter: brightness(80%);
+    }
+}
+
+.bg-white {
+    background-color: var(--color-white) !important;
+}
+.bg-light {
+    background-color: var(--color-light) !important;
+}

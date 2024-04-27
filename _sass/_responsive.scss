@@ -1,0 +1,11 @@
+@media (min-width: $responsive-cutoff) {
+    .r\:d-flex {
+        display: flex !important;
+    }
+    .r\:d-none {
+        display: none !important;
+    }
+    .r\:flex-row {
+        flex-direction: row !important;
+    }
+}

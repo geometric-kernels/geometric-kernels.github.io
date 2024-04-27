@@ -5,31 +5,19 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
-header_menu:
+header_pages:
     -
         title: "Home"
-        link: "/#home"
+        url: "/#home"
     -
         title: "Get Started"
-        link: "/#getstarted"
+        url: "/#getstarted"
     -
         title: "Code"
-        link: "/#code"
+        url: "/#code"
     -
         title: "Documentation"
-        link: "/#documentation"
+        url: "/#documentation"
     -
         title: "Examples"
-        link: "/#examples"
-defaults:
-    - scope:
-        path: "_posts/current"
-      values:
-        layout: post
-        category: current
-    - scope:
-        path: "_posts/archive"
-      values:
-        layout: post
-        category: archive
-        
+        url: "/#examples"
