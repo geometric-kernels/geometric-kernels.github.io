@@ -1,0 +1,35 @@
+.i\:background {
+    background-image: url("../banner.svg");
+    background-size: auto 100%;
+    background-position: center; 
+    background-repeat: repeat;
+}
+
+.i\:title {
+    background: color-mix(in srgb, var(--color-light) 95%, transparent);
+    box-shadow: 0 0 2rem 2rem color-mix(in srgb, var(--color-light) 95%, transparent);
+    border-radius: 10rem;
+}
+
+.i\:description {
+    max-width: 35rem;
+}
+
+.i\:form {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 1%;
+    border: 1px solid var(--color-btn);
+    border-radius: 1.5rem 0 0 1.5rem;
+    background-color: color-mix(in srgb, var(--color-btn), var(--color-light) 92.5%);
+}
+.i\:form + .btn {
+    border-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.i\:icon {
+    width: 4rem;
+    height: auto;
+}

@@ -1,0 +1,112 @@
+body {
+    background-color: var(--color-light);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: color-mix(in srgb, var(--color-primary), var(--color-black) 15%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+h2 {
+    font-size: $h2-font-size;
+}
+h3 {
+    font-size: $h3-font-size;
+}
+h4 {
+    font-size: $h4-font-size;
+}
+h5 {
+    font-size: $h5-font-size;
+}
+h6 {
+    font-size: $h6-font-size;
+}
+
+.h1 {
+    font-size: $h1-font-size !important;
+}
+.h2 {
+    font-size: $h2-font-size !important;
+}
+.h3 {
+    font-size: $h3-font-size !important;
+}
+.h4 {
+    font-size: $h4-font-size !important;
+}
+.h5 {
+    font-size: $h5-font-size !important;
+}
+.h6 {
+    font-size: $h6-font-size !important;
+}
+
+small, .small {
+    font-size: 80%;
+    font-weight: 400;
+}
+.strong {
+    font-weight: bold !important;
+}
+
+.container {
+    width: 100%;
+    max-width: $container-width;
+    padding-right: $container-padding;
+    padding-left: $container-padding;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.flex-row {
+    flex-direction: row !important;
+}
+.flex-column {
+    flex-direction: column !important;
+}
+
+.items-start {
+    align-items: flex-start !important;
+}
+.items-center {
+    align-items: center !important;
+}
+.items-baseline {
+    align-items: baseline !important;
+}
+.items-stretch {
+    align-items: stretch !important;
+}
+
+.justify-start {
+    justify-content: flex-start !important;
+}
+.justify-end {
+    justify-content: flex-end !important;
+}
+.justify-center {
+    justify-content: center !important;
+}
+.justify-between {
+    justify-content: space-between !important;
+}
+.justify-around {
+    justify-content: space-around !important;
+}

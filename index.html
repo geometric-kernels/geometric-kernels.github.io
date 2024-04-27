@@ -3,23 +3,71 @@ layout: default
 image: /assets/banner.png
 ---
 
-<div id="home" class="bg-light">
-<div class="container pt-5">
-{% capture title %}{% include_relative title.html %}{% endcapture %}
-{{ title | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
+<div class="bg-light i:background">
+    <div id="home" class="container d-flex justify-center pt-4">
+        <div class="d-flex flex-column items-center i:title">
+            <h1 class="mt-4 mb-5">{{ site.title }}</h1>
+            <img class="img-fluid mx-5" alt="Geometric Kernels" srcset="assets/title-sm.png 1x, assets/title.png 2x" src="assets/title-sm.png">
+            <h2 class="h4 my-5 text-center i:description">{{ site.description }}</h2>
+        </div>
+    </div>
 </div>
-</div>
+
+
+
+
 
 <div class="bg-white">
-<div id="getstarted" class="container py-4">
-{% capture getstarted %}{% include_relative getstarted.html %}{% endcapture %}
-{{ getstarted | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
-</div>
+    <div id="getstarted" class="container py-4">
+        <h1 class="my-4">Get Started</h1>
+
+        <div class="d-flex items-stretch pb-5">
+            <input class="i:form px-3 py-1" id="clipboard-target-1" type="text" value="pip install geometric_kernels" readonly="">
+            <button id="clipboard-button-1" class="btn" onclick="navigator.clipboard.writeText(document.getElementById('clipboard-target-1').value).then(()=>{document.getElementById('clipboard-button-1').innerHTML='Copied!';});">Copy</button>
+        </div>
+    </div>
 </div>
 
+
+
+
+
 <div class="bg-light">
-<div id="links" class="container py-4">
-{% capture examples %}{% include_relative links.html %}{% endcapture %}
-{{ examples | remove_first: "---" | remove_first: "published: false" | remove_first: "---" }}
-</div>
+    <div id="links" class="container d-flex flex-column r:flex-row items-center justify-around py-4">
+        <div id="code" class="d-flex flex-column items-center">
+            <h1 class="h2 mt-4 mb-5">
+            Code
+            </h1>
+            
+            <img class="i:icon dark-invert" alt="Source" src="assets/git-pull-request-outline.svg">
+    
+            <a class="btn mt-3 mb-4" href="/code">
+            View Source
+            </a>
+        </div>
+    
+        <div id="documentation" class="d-flex flex-column items-center">
+            <h1 class="h2 mt-4 mb-5">
+            Documentation
+            </h1>
+            
+            <img class="i:icon dark-invert" alt="Documentation" src="assets/book-outline.svg">
+    
+            <a class="btn mt-3 mb-4" href="/documentation">
+            Browse Documentation
+            </a>
+        </div>
+    
+        <div id="examples" class="d-flex flex-column items-center">
+            <h1 class="h2 mt-4 mb-5">
+            Examples
+            </h1>
+    
+            <img class="i:icon dark-invert" alt="Examples" src="assets/code-slash-outline.svg">
+            
+            <a class="btn mt-3 mb-4" href="/examples">
+            Explore Examples
+            </a>
+        </div>
+    </div>
 </div>
