@@ -23,11 +23,6 @@
     border-radius: 1.5rem 0 0 1.5rem;
     background-color: color-mix(in srgb, var(--color-btn), var(--color-light) 92.5%);
 }
-.i\:form + .btn {
-    border-left: 0 !important;
-    border-top-left-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-}
 
 .i\:icon {
     width: 4rem;

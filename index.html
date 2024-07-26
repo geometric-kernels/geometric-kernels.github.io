@@ -21,9 +21,9 @@ image: /assets/banner.png
     <div id="getstarted" class="container py-4">
         <h1 class="my-4">Get Started</h1>
 
-        <div class="d-flex items-stretch pb-5">
+        <div class="btn-group d-flex items-stretch pb-5">
             <input class="i:form px-3 py-1" id="clipboard-target-1" type="text" value="pip install geometric_kernels" readonly="">
-            <button id="clipboard-button-1" class="btn" onclick="navigator.clipboard.writeText(document.getElementById('clipboard-target-1').value).then(()=>{document.getElementById('clipboard-button-1').innerHTML='Copied!';});">Copy</button>
+            <button class="btn" id="clipboard-button-1" onclick="navigator.clipboard.writeText(document.getElementById('clipboard-target-1').value).then(()=>{document.getElementById('clipboard-button-1').innerHTML='Copied!';});">Copy</button>
         </div>
     </div>
 </div>
@@ -68,6 +68,30 @@ image: /assets/banner.png
             <a class="btn mt-3 mb-4" href="/examples">
             Explore Examples
             </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="bg-white">
+    <div id="citation" class="container py-4">
+        <h1 class="my-4">Citation</h1>
+        
+        <code>
+            <pre id="clipboard-target-2">@article{mostowsky2024,
+    title = {The GeometricKernels Package: Heat and Matérn Kernels for Geometric Learning on Manifolds, Meshes, and Graphs},
+    author = {Peter Mostowsky and Vincent Dutordoir and Iskander Azangulov and Noémie Jaquier and Michael John Hutchinson and Aditya Ravuri and Leonel Rozo and Alexander Terenin and Viacheslav Borovitskiy},
+    year = {2024},
+    journal = {arXiv:2407.08086},
+}</pre>
+        </code>
+
+        <div class="btn-group d-flex items-start">
+            <a class="btn" href="https://arxiv.org/abs/2407.08086">Read Paper</a>
+            <button id="clipboard-button-2" class="btn" onclick="navigator.clipboard.writeText(document.getElementById('clipboard-target-2').innerText).then(()=>{document.getElementById('clipboard-button-2').innerHTML='Copied!';});">Copy Citation</button>
         </div>
     </div>
 </div>
