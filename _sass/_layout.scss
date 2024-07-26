@@ -78,6 +78,10 @@ small, .small {
     font-weight: bold !important;
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
 .container {
     width: 100%;
     max-width: $container-width;
